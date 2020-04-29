@@ -11,11 +11,14 @@ trackup.sh [-hlsc][-ar arg]
 ### Examples
   - Clean all non-valid paths and display all tracked paths after this operation:
   ````
-    trackup.sh -cl
+    $ trackup.sh -cl
+    Cleaned out 1 entry
+    /path/to/somefile /path/to/someotherfile /another/path/to/somefile /just/a/file
   ````
   - Add a new file to be tracked:
   ````
-    trackup.sh -a somefile
+    $ trackup.sh -a somefile
+    [+] "/path/to/somefile"
   ````
     
 ### Options
