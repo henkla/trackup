@@ -89,7 +89,7 @@ trackup.sh [-hlsc][-ar arg]
   
 ## Good to know 
 
-💡 In compliance with [POSIX standards](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), combined short options are allowed: `-cl` will be interpreted the same way as `--clean --list`.
+💡 In compliance with [POSIX standards](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), combined short options are allowed. For instance, `-cl` will be interpreted the same way as `--clean --list`.
 
 💡 The commands will be performed in a fixed order, no matter which order you enter them:
 1. Show help (and then exit)
@@ -98,6 +98,8 @@ trackup.sh [-hlsc][-ar arg]
 4. List files
 5. Add files
 6. Remove files
+
+*In other words: `--list --clean` will be handled as if you entered `--clean --list`.*
 
 ## Todo
 * Handle how symlinks are handled
