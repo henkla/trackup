@@ -1,7 +1,7 @@
 #!/bin/sh
 
-readonly TRACKED_FILES="${HOME}/.local/bin/$(basename $0).list"
 readonly SCRIPT=$(basename $0)
+readonly TRACKED_FILES="${HOME}/.local/bin/${SCRIPT}.list"
 readonly OPTIONS=":shla:r:c"
 
 OPT_ADD=
@@ -190,9 +190,7 @@ clean_tracked_files () {
     done <$TRACKED_FILES > $temp_file
     mv $temp_file $TRACKED_FILES
 
-    if [[ $counter -eq 0 ]]; then
-        echo "No entries to clean"
-    else
+    if [[ $counter -gt 0 ]]; then
         local entry="entries"
         [[ $counter -eq 1 ]] && entry="entry"
         echo "Cleaned out ${counter} ${entry}"
