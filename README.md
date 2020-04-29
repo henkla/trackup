@@ -36,17 +36,38 @@ trackup.sh [-hlsc][-ar arg]
 ````
   
 ### Examples
-Clean all non-valid paths and display all tracked paths after this operation:
+
+##### Show current tracking status
+````
+  $ trackup.sh --status
+  [+] "/path/to/someotherfile" 
+  [+] "/another/path/to/somefile" 
+  [+] "/just/a/file"
+````
+
+##### Add a new file to be tracked:
+````
+  $ trackup.sh --add somefile
+  [+] "/path/to/somefile" 
+````
+
+##### Show current tracking status (after a file has been removed)
+````
+  $ rm /path/to/somefile
+  $ trackup.sh --status
+  [ ] "/path/to/somefile" 
+  [+] "/path/to/someotherfile" 
+  [+] "/another/path/to/somefile" 
+  [+] "/just/a/file"
+````
+
+##### Clean all non-valid paths and display all tracked paths after this operation:
 ````
   $ trackup.sh -cl
   Cleaned out 1 entry
-  /path/to/somefile /path/to/someotherfile /another/path/to/somefile /just/a/file
+  /path/to/someotherfile /another/path/to/somefile /just/a/file
 ````
-Add a new file to be tracked:
-````
-  $ trackup.sh -a somefile
-  [+] "/path/to/somefile"
-````
+
     
 ### Options
 
