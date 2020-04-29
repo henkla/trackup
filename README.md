@@ -55,7 +55,7 @@ trackup.sh [-hlsc][-ar arg]
 
 Following are some usage examples with corresponding output. They demonstrate several cases that may occur using this script, such as a adding file to be tracked, checking tracking status, performing a clean up and also how to list files that are being tracked.
 
-##### Show current tracking status
+##### Show current tracking status:
 ````
   $ trackup.sh --status
   [+] "/just/a/file"
@@ -70,7 +70,7 @@ Following are some usage examples with corresponding output. They demonstrate se
 ````
 *Two files were being added for tracking. **Note:** It is possible add relative paths - the script will figure outer the absolute paths.*
 
-##### Show current tracking status (after a file has been removed)
+##### Show current tracking status (after a file has been removed):
 ````
   $ rm /path/to/somefile
   $ trackup.sh --status
@@ -88,7 +88,7 @@ Following are some usage examples with corresponding output. They demonstrate se
 ````
 *The script performed a cleanup of all files that no longer exists. After that, the remaining tracked files were displayed as a string of paths separated by a space.*
 
-##### Copy all tracked files to another location
+##### Copy all tracked files to another location:
 ````
   $ mkdir -p ~/tmp/test
   $ cp $(trackup.sh --list) /tmp/test/
