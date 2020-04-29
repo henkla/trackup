@@ -88,9 +88,10 @@ trackup.sh [-hlsc][-ar arg]
   `-c, --clean`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will remove any stored path that is not valid  
   
 ## Good to know 
-In compliance with [POSIX standards](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), combined short options are allowed: `-cl` will be interpreted the same way as `--clean --list`.
 
-The commands will be performed in a fixed order, no matter which order you enter them:
+💡 In compliance with [POSIX standards](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), combined short options are allowed: `-cl` will be interpreted the same way as `--clean --list`.
+
+💡 The commands will be performed in a fixed order, no matter which order you enter them:
 1. Show help (and then exit)
 2. List file status
 3. Clean tracked files
