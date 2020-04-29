@@ -48,15 +48,17 @@ Following are some usage examples with corresponding output. They demonstrate se
 ##### Show current tracking status
 ````
   $ trackup.sh --status
-  [+] "/path/to/someotherfile" 
   [+] "/just/a/file"
 ````
+*Only one file is being tracked.*
 
 ##### Add a new file to be tracked:
 ````
-  $ trackup.sh --add somefile
+  $ trackup.sh --add somefile --add someotherfile
   [+] "/path/to/somefile" 
+  [+] "/path/to/someotherfile" 
 ````
+*Two files were being added for tracking. **Note:** It is possible add relative paths - the script will figure outer the absolute paths.*
 
 ##### Show current tracking status (after a file has been removed)
 ````
@@ -66,6 +68,7 @@ Following are some usage examples with corresponding output. They demonstrate se
   [+] "/path/to/someotherfile" 
   [+] "/just/a/file"
 ````
+*One file that are being tracked was removed. The `--status` option will show that this is the case.*
 
 ##### Clean all non-valid paths and display all tracked paths after this operation:
 ````
@@ -73,6 +76,7 @@ Following are some usage examples with corresponding output. They demonstrate se
   Cleaned out 1 entry
   /path/to/someotherfile /just/a/file
 ````
+*The script performed a cleanup of all files that no longer exists. After that, the remaining tracked files were displayed as a string of paths separated by a space.*
 
 ##### Copy all tracked files to another location
 ````
@@ -81,7 +85,8 @@ Following are some usage examples with corresponding output. They demonstrate se
   $ ls /tmp/test
   file    someotherfile
 ````
-    
+*For the sake of the example, a temp directory is created, in which all tracked files are copied to, combining the `cp` command and `--list` option.*
+
 ## Options
 
   The script takes a number of different options. In compliance with [POSIX standards](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), combined short options are allowed. For instance, `-cl` will be interpreted the same way as `--clean --list`. Furthermore, the commands will be performed in a fixed order, no matter which order you enter them:
@@ -104,3 +109,5 @@ Following are some usage examples with corresponding output. They demonstrate se
 
 ## Todo
 * Handle how symlinks are handled
+* Handle wildcards (add all files in folder)
+* Add verbose mode
