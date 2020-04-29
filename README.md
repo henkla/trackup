@@ -68,7 +68,7 @@ Following are some usage examples with corresponding output. They demonstrate se
   [+] "/path/to/somefile" 
   [+] "/path/to/someotherfile" 
 ````
-*Two files were being added for tracking. **Note:** It is possible add relative paths - the script will figure outer the absolute paths.*
+*Two files were added for tracking. **Note:** It is possible add relative paths - the script will figure outer the absolute paths.*
 
 ##### Show current tracking status (after a file has been removed):
 ````
