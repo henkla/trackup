@@ -1,6 +1,16 @@
 # trackup
-
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+
+## Table of Contents
+- [trackup](#trackup)
+  * [Description](#description)
+  * [Getting started](#getting-started)
+  * [How to use it](#how-to-use-it)
+  * [Examples with explanation](#examples-with-explanation)
+  * [Available options](#available-options)
+  * [Todo](#todo)
+---
 
 ## Description
 
