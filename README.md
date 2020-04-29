@@ -35,11 +35,15 @@ $ echo "alias trackup='trackup.sh'" >> ~/.bashrc
 ````
 
 ## Usage
+
+This is how the script is used:
 ````
 trackup.sh [-hlsc][-ar arg]
 ````
   
 ## Examples
+
+Following are some usage examples with corresponding output. They demonstrate several cases that may occur using this script, such as a adding file to be tracked, checking tracking status, performing a clean up and also how to list files that are being tracked.
 
 ##### Show current tracking status
 ````
@@ -80,26 +84,23 @@ trackup.sh [-hlsc][-ar arg]
     
 ## Options
 
+  The script takes a number of different options. In compliance with [POSIX standards](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), combined short options are allowed. For instance, `-cl` will be interpreted the same way as `--clean --list`. Furthermore, the commands will be performed in a fixed order, no matter which order you enter them:
+  1. Show help (and then exit)
+  2. List file status
+  3. Clean tracked files
+  4. List files
+  5. Add files
+  6. Remove files
+
+*In other words: `--list --clean` will be handled as if you entered `--clean --list`.* 
+
+##### Below is a list of all available commands:
   `-h, --help`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;displays the help section  
   `-l, --list`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prints all stored paths to stdout  
   `-s, --status`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;checks the validity of each stored path  
   `-a, --add <PATH>`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add a new file to be tracked  
   `-r, --remove <PATH>`&nbsp;&nbsp;removes a previously tracked file  
   `-c, --clean`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will remove any stored path that is not valid  
-  
-## Good to know 
-
-💡 In compliance with [POSIX standards](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), combined short options are allowed. For instance, `-cl` will be interpreted the same way as `--clean --list`.
-
-💡 The commands will be performed in a fixed order, no matter which order you enter them:
-1. Show help (and then exit)
-2. List file status
-3. Clean tracked files
-4. List files
-5. Add files
-6. Remove files
-
-*In other words: `--list --clean` will be handled as if you entered `--clean --list`.*
 
 ## Todo
 * Handle how symlinks are handled
