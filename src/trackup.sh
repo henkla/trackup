@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/env/bin bash
 
 readonly SCRIPT=$(basename $0)
 readonly TRACKED_FILES="${HOME}/.local/bin/${SCRIPT}.list"
