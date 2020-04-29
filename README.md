@@ -5,7 +5,7 @@ Keeps track of files that you want to backup. It does so by storing their path, 
 
 ### Usage
 ````
-trackup.sh -hlsarc <ARGUMENT>
+trackup.sh [-hlsc][-ar arg]
 ````
   
 ### Examples
@@ -27,8 +27,8 @@ trackup.sh -hlsarc <ARGUMENT>
   `-r, --remove <PATH>`&nbsp;&nbsp;removes a previously tracked file  
   `-c, --clean`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will remove any stored path that is not valid  
   
-### Good to know
-In compliance with POSIX standards, combined short options are allowed: `-cl` will be interpreted the same way as `--clean --list`.
+### Good to know 💡
+In compliance with [POSIX standards](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), combined short options are allowed: `-cl` will be interpreted the same way as `--clean --list`.
 
 The commands will be performed in a fixed order, no matter which order you enter them:
 1. Show help (and then exit)
