@@ -10,7 +10,7 @@ The script is intended to use in parallell to backing up system and/or applicati
 
 *All tracked files will be stored in a plain text file at location `~/.local/bin/trackup.sh.list`. It is this file that the script operates on.*
 
-## Installation
+## Getting started
 
 This is an example of how to setup and use the script. Do note that it is nothing more than a script and that there are several ways to set things up. 
 
@@ -34,14 +34,14 @@ $ export PATH="$HOME/.local/bin:$PATH"
 $ echo "alias trackup='trackup.sh'" >> ~/.bashrc
 ````
 
-## Usage
+## How to use it
 
 This is how the script is used:
 ````
 trackup.sh [-hlsc][-ar arg]
 ````
   
-## Examples
+## Examples with explanation
 
 Following are some usage examples with corresponding output. They demonstrate several cases that may occur using this script, such as a adding file to be tracked, checking tracking status, performing a clean up and also how to list files that are being tracked.
 
@@ -87,7 +87,7 @@ Following are some usage examples with corresponding output. They demonstrate se
 ````
 *For the sake of this example, a temporary directory is created, in which all tracked files are copied to, combining the `cp` command and `--list` option. The `ls` command shows the files actually being there.*
 
-## Options
+## Available options
 
   The script takes a number of different options. In compliance with [POSIX standards](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), combined short options are allowed. For instance, `-cl` will be interpreted the same way as `--clean --list`. Furthermore, the commands will be performed in a fixed order, no matter which order you enter them:
   1. Show help (and then exit)
