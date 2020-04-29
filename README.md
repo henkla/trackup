@@ -62,7 +62,7 @@ Following are some usage examples with corresponding output. They demonstrate se
 ````
 *Only one file is being tracked.*
 
-##### Add a new file to be tracked:
+##### Add some new files to be tracked:
 ````
   $ trackup.sh --add somefile --add someotherfile
   [+] "/path/to/somefile" 
