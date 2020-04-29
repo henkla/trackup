@@ -85,7 +85,7 @@ Following are some usage examples with corresponding output. They demonstrate se
   $ ls /tmp/test
   file    someotherfile
 ````
-*For the sake of the example, a temporary directory is created, in which all tracked files are copied to, combining the `cp` command and `--list` option. The `ls` command shows the files actually being there.*
+*For the sake of this example, a temporary directory is created, in which all tracked files are copied to, combining the `cp` command and `--list` option. The `ls` command shows the files actually being there.*
 
 ## Options
 
