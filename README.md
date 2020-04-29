@@ -27,7 +27,7 @@ $ export PATH="$HOME/.local/bin:$PATH"
 
 ##### (Optional) Create an alias for the script:
 ````
-$ echo "alias trackup='trackup.sh'"
+$ echo "alias trackup='trackup.sh'" >> ~/.bashrc
 ````
 
 ### Usage
