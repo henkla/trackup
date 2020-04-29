@@ -5,6 +5,27 @@
 ### Description
 Keeps track of files that you want to backup. It does so by storing their path, so that it easily can be retrieved at a later point. Also has the ability to check the validity of the paths, and also to remove any path that is no longer valid.
 
+### Installation
+1. Put the script file in location of choice. I use `~/.local/bin`:
+````
+$ mkdir -p ~/.local/bin && mv /path/to/trackup.sh ~/.local/bin
+````
+
+2. Make sure it is executable:
+````
+$ chmod u+x ~/.local/bin/trackup.sh
+````
+
+3. (Optional) Put location in `PATH` variable:
+````
+$ export PATH="$HOME/.local/bin:$PATH"
+````
+
+4. (Optional) Create an alias for the script:
+````
+$ echo "alias trackup='trackup.sh'"
+````
+
 ### Usage
 ````
 trackup.sh [-hlsc][-ar arg]
