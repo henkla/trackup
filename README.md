@@ -2,15 +2,6 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-##### Table of Contents  
-[Description](#description)  
-[Getting Started](#getting-started)  
-[How to use it](#usage)  
-[Examples with explanation](#examples)  
-[Available options](#options)  
-[Todo](#todo)  
-
-<a name="description"/>
 ## Description
 
 Keeps track of files that you want to backup. It does so by storing their path, so that it easily can be retrieved at a later point. Also has the ability to check the validity of the paths, and also to remove any path that is no longer valid.
@@ -19,7 +10,6 @@ The script is intended to use in parallell to backing up system and/or applicati
 
 *All tracked files will be stored in a plain text file at location `~/.local/bin/trackup.sh.list`. It is this file that the script operates on.*
 
-<a name="getting-started"/>
 ## Getting started
 
 This is an example of how to setup and use the script. Do note that it is nothing more than a script and that there are several ways to set things up. 
@@ -44,7 +34,6 @@ $ export PATH="$HOME/.local/bin:$PATH"
 $ echo "alias trackup='trackup.sh'" >> ~/.bashrc
 ````
 
-<a name="usage"/>
 ## How to use it
 
 This is how the script is used:
@@ -52,7 +41,6 @@ This is how the script is used:
 trackup.sh [-hlsc][-ar arg]
 ````
 
-<a name="examples"/>
 ## Examples with explanation
 
 Following are some usage examples with corresponding output. They demonstrate several cases that may occur using this script, such as a adding file to be tracked, checking tracking status, performing a clean up and also how to list files that are being tracked.
@@ -99,7 +87,7 @@ Following are some usage examples with corresponding output. They demonstrate se
 ````
 *For the sake of this example, a temporary directory is created, in which all tracked files are copied to, combining the `cp` command and `--list` option. The `ls` command shows the files actually being there.*
 
-<a name="options"/>
+
 ## Available options
 
   The script takes a number of different options. In compliance with [POSIX standards](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html), combined short options are allowed. For instance, `-cl` will be interpreted the same way as `--clean --list`. Furthermore, the commands will be performed in a fixed order, no matter which order you enter them:
@@ -120,7 +108,7 @@ Following are some usage examples with corresponding output. They demonstrate se
   `-r, --remove <PATH>`&nbsp;&nbsp;removes a previously tracked file  
   `-c, --clean`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will remove any stored path that is not valid  
 
-<a name="todo"/>
+
 ## Todo
 * Handle how symlinks are handled
 * Handle wildcards (add all files in folder)
