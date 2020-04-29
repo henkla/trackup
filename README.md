@@ -22,12 +22,12 @@ $ mkdir -p ~/.local/bin && mv /path/to/trackup.sh ~/.local/bin
 $ chmod u+x ~/.local/bin/trackup.sh
 ````
 
-##### (Optional) Put location in `PATH` variable:
+##### (*Optional*) Put location in `PATH` variable:
 ````
 $ export PATH="$HOME/.local/bin:$PATH"
 ````
 
-##### (Optional) Create an alias for the script:
+##### (*Optional*) Create an alias for the script:
 ````
 $ echo "alias trackup='trackup.sh'" >> ~/.bashrc
 ````
