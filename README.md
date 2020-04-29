@@ -27,8 +27,16 @@ trackup.sh -hlsarc <ARGUMENT>
   `-r, --remove <PATH>`&nbsp;&nbsp;removes a previously tracked file  
   `-c, --clean`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will remove any stored path that is not valid  
   
-    * Note that combined short options are allowed: "-cl" will be
-      interpreted the same way as "--clean --list".
-      
+### Good to know
+In compliance with POSIX standards, combined short options are allowed: `-cl` will be interpreted the same way as `--clean --list`.
+
+The commands will be performed in a fixed order, no matter which order you enter them:
+1. Show help (and then exit)
+2. List file status
+3. Clean tracked files
+4. List files
+5. Add files
+6. Remove files
+
 ### Todo
 * Handle how symlinks are handled
