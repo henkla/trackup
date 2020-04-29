@@ -123,3 +123,4 @@ Following are some usage examples with corresponding output. They demonstrate se
 * Handle how symlinks are handled
 * Handle wildcards (add all files in folder)
 * Add verbose mode
+* make script POSIX compliant and not reliant on bash
