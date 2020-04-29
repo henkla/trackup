@@ -3,25 +3,29 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ### Description
+
 Keeps track of files that you want to backup. It does so by storing their path, so that it easily can be retrieved at a later point. Also has the ability to check the validity of the paths, and also to remove any path that is no longer valid.
 
 ### Installation
-1. Put the script file in location of choice. I use `~/.local/bin`:
+
+This is an example of how to setup and use the script. Do note that it is nothing more than a script and that there are several ways to set things up. 
+
+##### Put the script file in location of choice. I use `~/.local/bin`:
 ````
 $ mkdir -p ~/.local/bin && mv /path/to/trackup.sh ~/.local/bin
 ````
 
-2. Make sure it is executable:
+##### Make sure it is executable:
 ````
 $ chmod u+x ~/.local/bin/trackup.sh
 ````
 
-3. (Optional) Put location in `PATH` variable:
+##### (Optional) Put location in `PATH` variable:
 ````
 $ export PATH="$HOME/.local/bin:$PATH"
 ````
 
-4. (Optional) Create an alias for the script:
+##### (Optional) Create an alias for the script:
 ````
 $ echo "alias trackup='trackup.sh'"
 ````
