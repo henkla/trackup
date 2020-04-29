@@ -8,6 +8,8 @@ Keeps track of files that you want to backup. It does so by storing their path, 
 
 The script is intended to use in parallell to backing up system and/or application files, by piping the output of list (`trackup.sh --list`) to a backup application or solution of choice.
 
+All tracked files will be stored in a plain text file at location `~/.local/bin/trackup.sh.list`. It is this file that the script operates on. 
+
 ## Installation
 
 This is an example of how to setup and use the script. Do note that it is nothing more than a script and that there are several ways to set things up. 
