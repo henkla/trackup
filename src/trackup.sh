@@ -88,6 +88,10 @@ cat <<- EOF
         ${SCRIPT} -cl
     - Add a new file to be tracked:
         ${SCRIPT} -a somefile
+        
+    DOCUMENTATION:
+    Full documentation can be found at github.com/henkla/trackup
+    
 EOF
 
 }
