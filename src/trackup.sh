@@ -1,5 +1,10 @@
 #!/usr/env/bin bash
 
+# Author: Henrik Larsson
+# E-mail: lthlarsson@gmail.com
+# Full documentation can be found at github.com/henkla/trackup
+# ---
+
 readonly SCRIPT=$(basename $0)
 readonly TRACKED_FILES="${HOME}/.local/bin/${SCRIPT}.list"
 readonly OPTIONS=":shla:r:c"
