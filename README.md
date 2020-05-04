@@ -36,8 +36,9 @@ $ chmod u+x ~/.local/bin/trackup.sh
 
 ##### (*Optional*) Put location in `PATH` variable:
 ````
-$ export PATH="$HOME/.local/bin:$PATH"
+$ echo "export PATH='$HOME/.local/bin:$PATH'" >> ~/.bashrc
 ````
+*Put export in shell profile for persistency*
 
 ##### (*Optional*) Create an alias for the script:
 ````
