@@ -112,12 +112,15 @@ Following are some usage examples with corresponding output. They demonstrate se
 *In other words: `--list --clean` will be handled as if you entered `--clean --list`.* 
 
 ##### Below is a list of all available commands:
-  `-h, --help`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;displays the help section  
-  `-l, --list`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prints all stored paths to stdout  
-  `-s, --status`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;checks the validity of each stored path  
-  `-a, --add <PATH>`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add a new file to be tracked  
-  `-r, --remove <PATH>`&nbsp;&nbsp;removes a previously tracked file  
-  `-c, --clean`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will remove any stored path that is not valid  
+
+| Short      | Long             | Argument         | Description     |
+|:---------- |:---------------- |:---------------- |:--------------- |
+| -h         | --help           |                  | displays the help section |
+| -l         | --list           |                  | prints all stored paths to stdout |
+| -s         | --status         |                  | checks the validity of each stored path |
+| -a         | --add            | `<PATH-TO-FILE>` | add a new file to be tracked |
+| -r         | --remove         | `<PATH-TO-FILE>` | removes a previously tracked file |
+| -c         | --clean          |                  | will remove any stored path that is not valid |
 
 
 ## Todo
