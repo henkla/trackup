@@ -3,13 +3,12 @@
 
 
 ## Table of Contents
-- [trackup](#trackup)
-  * [Description](#description)
-  * [Getting started](#getting-started)
-  * [How to use it](#how-to-use-it)
-  * [Examples with explanation](#examples-with-explanation)
-  * [Available options](#available-options)
-  * [Todo](#todo)
+ * [Description](#description)
+ * [Getting started](#getting-started)
+ * [How to use it](#how-to-use-it)
+ * [Examples with explanation](#examples-with-explanation)
+ * [Available options](#available-options)
+ * [Todo](#todo)
 ---
 
 ## Description
