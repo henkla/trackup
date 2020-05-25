@@ -10,14 +10,14 @@ readonly TRACKED_FILES="${HOME}/.local/bin/${SCRIPT}.list"
 readonly OPTIONS=":shla:r:c"
 readonly DOCUMENTATION="https://github.com/henkla/trackup"
 
-OPT_ADD=
+OPT_ADD=0
 ARG_ADD=()
-OPT_REMOVE=
+OPT_REMOVE=0
 ARG_REMOVE=()
-OPT_CLEAN=
-OPT_LIST=
-OPT_STATUS=
-OPT_HELP=
+OPT_CLEAN=0
+OPT_LIST=0
+OPT_STATUS=0
+OPT_HELP=0
 
 parse_options () {
 
