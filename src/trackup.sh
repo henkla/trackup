@@ -8,6 +8,7 @@
 readonly SCRIPT=$(basename $0)
 readonly TRACKED_FILES="${HOME}/.local/bin/${SCRIPT}.list"
 readonly OPTIONS=":shla:r:c"
+readonly DOCUMENTATION="https://github.com/henkla/trackup"
 
 OPT_ADD=
 ARG_ADD=()
@@ -90,7 +91,7 @@ cat <<- EOF
         ${SCRIPT} -a somefile
         
     DOCUMENTATION:
-    Full documentation can be found at github.com/henkla/trackup
+    Full documentation can be found at $DOCUMENTATION
     
 EOF
 
