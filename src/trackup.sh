@@ -66,7 +66,7 @@ print_usage () {
 
 cat <<- EOF
     USAGE: 
-    ${SCRIPT} -${OPTIONS//:} [ARGUMENT]
+    ${SCRIPT} [-hlsc] [-ar ARG]
     DESCRIPTION:
     Keeps track of files that you want to backup. It does so by
     storing their path, so that it easily can be retrieved at a
